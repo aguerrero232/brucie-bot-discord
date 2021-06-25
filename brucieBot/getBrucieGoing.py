@@ -120,13 +120,6 @@ async def covid19(ctx):
 
 
 @bot.command()
-async def hoefosho(ctx):
-    dir = '/home/ariel/PycharmProjects/brucieBot/memes/hoefosho'
-    filename = random.choice([x for x in os.listdir(dir)])
-    await ctx.send(file=discord.File(dir + '/' + filename))
-
-
-@bot.command()
 async def ww3(ctx):
     dir = '/home/ariel/PycharmProjects/brucieBot/memes/ww3'
     filename = random.choice([x for x in os.listdir(dir)])
@@ -150,13 +143,6 @@ async def politics(ctx):
 @bot.command()
 async def swear(ctx):
     dir = '/home/ariel/PycharmProjects/brucieBot/memes/swear'
-    filename = random.choice([x for x in os.listdir(dir)])
-    await ctx.send(file=discord.File(dir + '/' + filename))
-
-
-@bot.command()
-async def religious(ctx):
-    dir = '/home/ariel/PycharmProjects/brucieBot/memes/religious'
     filename = random.choice([x for x in os.listdir(dir)])
     await ctx.send(file=discord.File(dir + '/' + filename))
 
